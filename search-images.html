@@ -72,11 +72,10 @@
 
     <!--FUNCIONALIDAD DE LA PAGINA A TRAVES DE JS -->
     <!-- pre: Se debe escribir lo que querramos buscar imagenes en la entrada de texto, si el campo esta vacio, se manda un alert-->
-    <!-- post: Chequea que la entrada(input) este vacio, si lo esta, se envia un alert, sino, forma un url, interceptando el link de la API pixabay, 
-    cambiando por dato obtenido en el input, y guardando las imagenes en un array. Luego llamo  al div contenedor, de tal manera, que se utiliza un for
-    para recorrer el array de imagenes anteriormente creado, puediendo usar x cantidad, en este caso 12;  entonces por cada iteración, se crea un div(con
-    un estilo creado) con cada iteración, en los cuales contienen una imagen del array. Formando 3 columnas con 4 filas, de imagenes en sus respectivos
-    divs.  -->
+    <!-- post: Chequea que la entrada(input) este vacio, si lo esta, se envia un alert, sino, el valor del input se toma para realizar una petición 
+        mediante AJAX a una API de pixabay. El valor devuelto en formato JSON se guarda en un array que luego se recorre para incrustar elementos en el DOM. 
+        entonces por cada iteración, se crea un div(con un estilo creado) con cada iteración, en los cuales contienen una imagen del array. 
+        Formando 3 columnas con 4 filas, de imagenes en sus respectivos divs.  -->
     <script>
        function buscar(e) {
 
